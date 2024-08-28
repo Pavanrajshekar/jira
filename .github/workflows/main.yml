@@ -1,0 +1,12 @@
+name: Simple CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Hello, World!"
+      - run: uname -a
